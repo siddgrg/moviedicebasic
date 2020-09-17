@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="backdropImageView" fitHeight="439.0" fitWidth="780.0" opacity="0.33" pickOnBounds="true" preserveRatio="true" />
+      <HBox prefWidth="580.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="300.0" spacing="20.0">
+               <children>
+                  <ImageView fx:id="posterImageView" fitHeight="408.0" fitWidth="272.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="439.0" prefWidth="480.0">
+               <children>
+                  <Button fx:id="movieRollButton" mnemonicParsing="false" onAction="#diceRollNoParameters" text="Roll!">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <HBox prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="150.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0">
+                                 <children>
+                                    <Label text="Title: " textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="titleLabel" textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0">
+                                 <children>
+                                    <Label text="Language: " textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="languageLabel" textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0">
+                                 <children>
+                                    <Label text="Release date: " textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="releaseDateLabel" textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0">
+                                 <children>
+                                    <Label text="Genres: " textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="genresLabel" textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="150.0" prefWidth="300.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0">
+                                 <children>
+                                    <Label text="Average vote: " textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="averageVoteLabel" textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0">
+                                 <children>
+                                    <Label text="Vote count: " textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="voteCountLabel" textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0">
+                                 <children>
+                                    <Label text="Id: " textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="idLabel" textFill="WHITE">
+                                       <font>
+                                          <Font name="Bangla Sangam MN" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>
